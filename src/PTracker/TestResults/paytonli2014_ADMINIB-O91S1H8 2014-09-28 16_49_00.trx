@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c9875f36-5cb9-4e86-8d44-528851d8d27e" name="paytonli2014@ADMINIB-O91S1H8 2014-09-28 16:49:00" runUser="ADMINIB-O91S1H8\paytonli2014" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4e5cae7b-75fd-4c06-ac5b-75de7e3bdad5">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="paytonli2014_ADMINIB-O91S1H8 2014-09-28 16_49_00">
+      <DeploymentItem filename="C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\bin\Debug\PTracker.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-09-28T16:49:00.6677353+08:00" queuing="2014-09-28T16:49:00.8877356+08:00" start="2014-09-28T16:49:00.9177357+08:00" finish="2014-09-28T16:49:01.1777360+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="2" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="FileManagerConstructorTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="79cefc58-5808-e29f-e99d-4c4f744a294c">
+      <Execution id="6a5de983-78be-4404-a8fe-dbbcf548f8f4" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FileManagerConstructorTest" />
+    </UnitTest>
+    <UnitTest name="SubscribeTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="414c0098-dcec-85fc-6506-67bbb6cc2995">
+      <Execution id="a5bf8dfb-2abb-4b25-b3a4-754687d54c46" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubscribeTest" />
+    </UnitTest>
+    <UnitTest name="LoadTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="66f41bfc-434e-6dfe-1b1f-5198c7f003f7">
+      <DeploymentItems>
+        <DeploymentItem filename="PTracker.Core.dll" />
+      </DeploymentItems>
+      <Execution id="baa7e1d7-1b7d-4115-8af9-e230baa8301f" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoadTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="414c0098-dcec-85fc-6506-67bbb6cc2995" executionId="a5bf8dfb-2abb-4b25-b3a4-754687d54c46" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66f41bfc-434e-6dfe-1b1f-5198c7f003f7" executionId="baa7e1d7-1b7d-4115-8af9-e230baa8301f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79cefc58-5808-e29f-e99d-4c4f744a294c" executionId="6a5de983-78be-4404-a8fe-dbbcf548f8f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a5bf8dfb-2abb-4b25-b3a4-754687d54c46" testId="414c0098-dcec-85fc-6506-67bbb6cc2995" testName="SubscribeTest" computerName="ADMINIB-O91S1H8" duration="00:00:00.0378438" startTime="2014-09-28T16:49:00.9277357+08:00" endTime="2014-09-28T16:49:01.1477360+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5bf8dfb-2abb-4b25-b3a4-754687d54c46">
+      <Output>
+        <StdOut>Loading file. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+Loaded. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+FileManager constructed. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt</StdOut>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;(null)&gt;. Actual:&lt;PTracker.Core.FileManager+Subscribtion&gt;. </Message>
+          <StackTrace>   at PTracker.Core.Test.FileManagerTest.SubscribeTest() in C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\FileManagerTest.cs:line 129
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="baa7e1d7-1b7d-4115-8af9-e230baa8301f" testId="66f41bfc-434e-6dfe-1b1f-5198c7f003f7" testName="LoadTest" computerName="ADMINIB-O91S1H8" duration="00:00:00.0042846" startTime="2014-09-28T16:49:01.1477360+08:00" endTime="2014-09-28T16:49:01.1577360+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="baa7e1d7-1b7d-4115-8af9-e230baa8301f">
+      <Output>
+        <StdOut>Loading file. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+Loaded. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+FileManager constructed. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+Loading file. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+Loaded. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6a5de983-78be-4404-a8fe-dbbcf548f8f4" testId="79cefc58-5808-e29f-e99d-4c4f744a294c" testName="FileManagerConstructorTest" computerName="ADMINIB-O91S1H8" duration="00:00:00.0006677" startTime="2014-09-28T16:49:01.1577360+08:00" endTime="2014-09-28T16:49:01.1577360+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a5de983-78be-4404-a8fe-dbbcf548f8f4">
+      <Output>
+        <StdOut>Loading file. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+Loaded. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+FileManager constructed. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

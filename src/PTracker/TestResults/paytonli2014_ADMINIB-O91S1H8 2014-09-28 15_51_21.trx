@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a8a3a05f-aa49-4815-88d1-c444af2faa3d" name="paytonli2014@ADMINIB-O91S1H8 2014-09-28 15:51:21" runUser="ADMINIB-O91S1H8\paytonli2014" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4e5cae7b-75fd-4c06-ac5b-75de7e3bdad5">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="paytonli2014_ADMINIB-O91S1H8 2014-09-28 15_51_21">
+      <DeploymentItem filename="C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\bin\Debug\PTracker.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-09-28T15:51:21.9626773+08:00" queuing="2014-09-28T15:51:23.0826789+08:00" start="2014-09-28T15:51:23.2026791+08:00" finish="2014-09-28T15:51:53.8069141+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="3" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="2" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="ADMINIB-O91S1H8" outcome="Error" timestamp="2014-09-28T15:51:53.8059140+08:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="FileManagerConstructorTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="79cefc58-5808-e29f-e99d-4c4f744a294c">
+      <Execution id="d47c88ab-bab2-465e-9be2-dd52fe69d128" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FileManagerConstructorTest" />
+    </UnitTest>
+    <UnitTest name="SubscribeTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="414c0098-dcec-85fc-6506-67bbb6cc2995">
+      <Execution id="d6671bef-9861-4ae4-979d-7597f88190e8" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubscribeTest" />
+    </UnitTest>
+    <UnitTest name="LoadTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="66f41bfc-434e-6dfe-1b1f-5198c7f003f7">
+      <DeploymentItems>
+        <DeploymentItem filename="PTracker.Core.dll" />
+      </DeploymentItems>
+      <Execution id="afec0791-736a-4ffd-bd37-45116bbbe617" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoadTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="414c0098-dcec-85fc-6506-67bbb6cc2995" executionId="d6671bef-9861-4ae4-979d-7597f88190e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66f41bfc-434e-6dfe-1b1f-5198c7f003f7" executionId="afec0791-736a-4ffd-bd37-45116bbbe617" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79cefc58-5808-e29f-e99d-4c4f744a294c" executionId="d47c88ab-bab2-465e-9be2-dd52fe69d128" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d6671bef-9861-4ae4-979d-7597f88190e8" testId="414c0098-dcec-85fc-6506-67bbb6cc2995" testName="SubscribeTest" computerName="ADMINIB-O91S1H8" duration="00:00:30.5342350" startTime="2014-09-28T15:51:23.2726791+08:00" endTime="2014-09-28T15:51:53.8069141+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6671bef-9861-4ae4-979d-7597f88190e8">
+    </UnitTestResult>
+    <UnitTestResult executionId="afec0791-736a-4ffd-bd37-45116bbbe617" testId="66f41bfc-434e-6dfe-1b1f-5198c7f003f7" testName="LoadTest" computerName="ADMINIB-O91S1H8" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="afec0791-736a-4ffd-bd37-45116bbbe617">
+    </UnitTestResult>
+    <UnitTestResult executionId="d47c88ab-bab2-465e-9be2-dd52fe69d128" testId="79cefc58-5808-e29f-e99d-4c4f744a294c" testName="FileManagerConstructorTest" computerName="ADMINIB-O91S1H8" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d47c88ab-bab2-465e-9be2-dd52fe69d128">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a24f9bcf-103f-4a35-be52-11ea68f3a6bd" name="paytonli2014@ADMINIB-O91S1H8 2014-09-28 15:48:18" runUser="ADMINIB-O91S1H8\paytonli2014" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4e5cae7b-75fd-4c06-ac5b-75de7e3bdad5">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="paytonli2014_ADMINIB-O91S1H8 2014-09-28 15_48_18">
+      <DeploymentItem filename="C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\bin\Debug\PTracker.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-09-28T15:48:18.1012730+08:00" queuing="2014-09-28T15:48:18.1432754+08:00" start="2014-09-28T15:48:18.1472757+08:00" finish="2014-09-28T15:48:18.3682883+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="ADMINIB-O91S1H8" outcome="Warning" timestamp="2014-09-28T15:48:18.1432754+08:00">
+        <Text>Deployment is currently disabled. The deployment item 'PTracker.Core.dll' on test 'PTracker.Core.Test.FileManagerTest.LoadTest' was not deployed.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LoadTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="66f41bfc-434e-6dfe-1b1f-5198c7f003f7">
+      <DeploymentItems>
+        <DeploymentItem filename="PTracker.Core.dll" />
+      </DeploymentItems>
+      <Execution id="adab7f9b-da0d-495b-8ae3-09ca7fe9a999" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoadTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="66f41bfc-434e-6dfe-1b1f-5198c7f003f7" executionId="adab7f9b-da0d-495b-8ae3-09ca7fe9a999" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="adab7f9b-da0d-495b-8ae3-09ca7fe9a999" testId="66f41bfc-434e-6dfe-1b1f-5198c7f003f7" testName="LoadTest" computerName="ADMINIB-O91S1H8" duration="00:00:00.0368717" startTime="2014-09-28T15:48:18.1512759+08:00" endTime="2014-09-28T15:48:18.3592878+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adab7f9b-da0d-495b-8ae3-09ca7fe9a999">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method PTracker.Core.Test.FileManagerTest.LoadTest threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: file ont found. path: C:\Workspace\Git\PTracker\src\PTracker\TestResults\paytonli2014_ADMINIB-O91S1H8 2014-09-28 15_48_18\Out\TestFile\Test01.txt</Message>
+          <StackTrace>    at PTracker.Core.FileManager..ctor(String path, Boolean isTracking, Encoding encoding, TaskScheduler tScheduler, ILogger logger) in C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\FileManager.cs:line 40
+   at PTracker.Core.Test.FileManagerTest.LoadTest() in C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\FileManagerTest.cs:line 98
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

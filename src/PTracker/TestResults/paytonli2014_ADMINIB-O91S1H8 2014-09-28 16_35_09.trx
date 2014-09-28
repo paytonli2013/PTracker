@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ef98b234-3660-484b-b08e-eef2f241eb0d" name="paytonli2014@ADMINIB-O91S1H8 2014-09-28 16:35:09" runUser="ADMINIB-O91S1H8\paytonli2014" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4e5cae7b-75fd-4c06-ac5b-75de7e3bdad5">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="paytonli2014_ADMINIB-O91S1H8 2014-09-28 16_35_09">
+      <DeploymentItem filename="C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\bin\Debug\PTracker.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-09-28T16:35:09.0831189+08:00" queuing="2014-09-28T16:35:09.3631193+08:00" start="2014-09-28T16:35:09.3831193+08:00" finish="2014-09-28T16:35:09.7331198+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="FileManagerConstructorTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="79cefc58-5808-e29f-e99d-4c4f744a294c">
+      <Execution id="bbb49106-231f-4f42-b287-fe539e92bfad" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FileManagerConstructorTest" />
+    </UnitTest>
+    <UnitTest name="SubscribeTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="414c0098-dcec-85fc-6506-67bbb6cc2995">
+      <Execution id="d5a07c88-cde5-4955-ae30-cef19821a9c5" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubscribeTest" />
+    </UnitTest>
+    <UnitTest name="LoadTest" storage="c:\workspace\git\ptracker\src\ptracker\ptracker.core.test\bin\debug\ptracker.core.test.dll" id="66f41bfc-434e-6dfe-1b1f-5198c7f003f7">
+      <DeploymentItems>
+        <DeploymentItem filename="PTracker.Core.dll" />
+      </DeploymentItems>
+      <Execution id="52c3ca54-78c0-4462-ac49-8ed5dce21442" />
+      <TestMethod codeBase="C:/Workspace/Git/PTracker/src/PTracker/PTracker.Core.Test/bin/Debug/PTracker.Core.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PTracker.Core.Test.FileManagerTest, PTracker.Core.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoadTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="414c0098-dcec-85fc-6506-67bbb6cc2995" executionId="d5a07c88-cde5-4955-ae30-cef19821a9c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66f41bfc-434e-6dfe-1b1f-5198c7f003f7" executionId="52c3ca54-78c0-4462-ac49-8ed5dce21442" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79cefc58-5808-e29f-e99d-4c4f744a294c" executionId="bbb49106-231f-4f42-b287-fe539e92bfad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d5a07c88-cde5-4955-ae30-cef19821a9c5" testId="414c0098-dcec-85fc-6506-67bbb6cc2995" testName="SubscribeTest" computerName="ADMINIB-O91S1H8" duration="00:00:00.1091801" startTime="2014-09-28T16:35:09.4031193+08:00" endTime="2014-09-28T16:35:09.7031198+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5a07c88-cde5-4955-ae30-cef19821a9c5">
+      <Output>
+        <StdOut>Loading file. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+Loaded. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+FileManager constructed. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt</StdOut>
+        <ErrorInfo>
+          <Message>Test method PTracker.Core.Test.FileManagerTest.SubscribeTest threw exception: 
+System.ArgumentException: The directory name C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt is invalid.</Message>
+          <StackTrace>    at System.IO.FileSystemWatcher..ctor(String path, String filter)
+   at System.IO.FileSystemWatcher..ctor(String path)
+   at PTracker.Core.FileManager..ctor(String path, Boolean isTracking, Encoding encoding, TaskScheduler tScheduler, ILogger logger) in C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\FileManager.cs:line 51
+   at PTracker.Core.Test.FileManagerTest.SubscribeTest() in C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\FileManagerTest.cs:line 124
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="52c3ca54-78c0-4462-ac49-8ed5dce21442" testId="66f41bfc-434e-6dfe-1b1f-5198c7f003f7" testName="LoadTest" computerName="ADMINIB-O91S1H8" duration="00:00:00.0100058" startTime="2014-09-28T16:35:09.7031198+08:00" endTime="2014-09-28T16:35:09.7131198+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52c3ca54-78c0-4462-ac49-8ed5dce21442">
+      <Output>
+        <StdOut>Loading file. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+Loaded. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+FileManager constructed. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt</StdOut>
+        <ErrorInfo>
+          <Message>Test method PTracker.Core.Test.FileManagerTest.LoadTest threw exception: 
+System.ArgumentException: The directory name C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt is invalid.</Message>
+          <StackTrace>    at System.IO.FileSystemWatcher..ctor(String path, String filter)
+   at System.IO.FileSystemWatcher..ctor(String path)
+   at PTracker.Core.FileManager..ctor(String path, Boolean isTracking, Encoding encoding, TaskScheduler tScheduler, ILogger logger) in C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\FileManager.cs:line 51
+   at PTracker.Core.Test.FileManagerTest.LoadTest() in C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\FileManagerTest.cs:line 101
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bbb49106-231f-4f42-b287-fe539e92bfad" testId="79cefc58-5808-e29f-e99d-4c4f744a294c" testName="FileManagerConstructorTest" computerName="ADMINIB-O91S1H8" duration="00:00:00.0022416" startTime="2014-09-28T16:35:09.7231198+08:00" endTime="2014-09-28T16:35:09.7231198+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bbb49106-231f-4f42-b287-fe539e92bfad">
+      <Output>
+        <StdOut>Loading file. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+Loaded. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt
+FileManager constructed. path: C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt</StdOut>
+        <ErrorInfo>
+          <Message>Test method PTracker.Core.Test.FileManagerTest.FileManagerConstructorTest threw exception: 
+System.ArgumentException: The directory name C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\bin\Debug\TestFile\Test01.txt is invalid.</Message>
+          <StackTrace>    at System.IO.FileSystemWatcher..ctor(String path, String filter)
+   at System.IO.FileSystemWatcher..ctor(String path)
+   at PTracker.Core.FileManager..ctor(String path, Boolean isTracking, Encoding encoding, TaskScheduler tScheduler, ILogger logger) in C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\FileManager.cs:line 51
+   at PTracker.Core.Test.FileManagerTest.FileManagerConstructorTest() in C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core.Test\FileManagerTest.cs:line 83
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

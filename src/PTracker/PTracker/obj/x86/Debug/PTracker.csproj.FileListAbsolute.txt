@@ -1,0 +1,11 @@
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\bin\Debug\PTracker.exe
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\bin\Debug\PTracker.pdb
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\MainWindow.baml
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\MainWindow.g.cs
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\App.g.cs
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker_MarkupCompile.cache
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.g.resources
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.Properties.Resources.resources
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.csproj.GenerateResource.Cache
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.exe
+C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.pdb
