@@ -9,3 +9,14 @@ C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.Propertie
 C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.csproj.GenerateResource.Cache
 C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.exe
 C:\Workspace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.pdb
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.exe
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.pdb
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\bin\Debug\PTracker.exe
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\bin\Debug\PTracker.pdb
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\MainWindow.baml
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\MainWindow.g.cs
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\App.g.cs
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker_MarkupCompile.cache
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.g.resources
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.Properties.Resources.resources
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker\obj\x86\Debug\PTracker.csproj.GenerateResource.Cache

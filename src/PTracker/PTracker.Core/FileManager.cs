@@ -41,7 +41,7 @@ namespace PTracker.Core
             }
             if (!File.Exists(path))
             {
-                throw new ArgumentNullException(string.Format("file ont found. path: {0}", path));
+                throw new Exception(string.Format("file ont found. path: {0}", path));
             }
 
             _path = path;
@@ -81,7 +81,7 @@ namespace PTracker.Core
         private void Update()
         {
             Thread.Sleep(10);
-            using (FileStream fs = File.OpenRead(_path))
+            using (FileStream fs = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.Read))
             using (StreamReader sr = new StreamReader(fs, _encoding))
             {
                 fs.Position = _position;
@@ -92,6 +92,7 @@ namespace PTracker.Core
                     Interlocked.Increment(ref _lineNumber);
                     _lines.Add(line);
                 }
+                _position = fs.Position;
             }
         }
 
@@ -104,7 +105,7 @@ namespace PTracker.Core
                 _logger.WriteLine(string.Format("Loading file. path: {0}", _path));
 
                 Interlocked.Exchange(ref _lineNumber, 0);
-                using (FileStream fs = File.OpenRead(_path))
+                using (FileStream fs = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.Read))
                 using (StreamReader sr = new StreamReader(fs, _encoding))
                 {
                     while (sr.Peek() > 0)
@@ -174,7 +175,7 @@ namespace PTracker.Core
             return Subscribe(observer, null);
         }
 
-        public IDisposable Subscribe(IObserver<DocumentChangeSet> observer, IFilter filter)
+        public IDisposable Subscribe(IObserver<DocumentChangeSet> observer, IFilter<DocumentLine> filter)
         {
             var subscribtion = new Subscribtion(this, observer, filter);
             _subscribtions.Add(subscribtion);
@@ -185,9 +186,9 @@ namespace PTracker.Core
         {
             private FileManager _fileManager;
 
-            IFilter _filter;
+            IFilter<DocumentLine> _filter;
 
-            public IFilter Filter
+            public IFilter<DocumentLine> Filter
             {
                 get { return _filter; }
             }
@@ -199,7 +200,7 @@ namespace PTracker.Core
                 get { return _observer; }
             }
 
-            public Subscribtion(FileManager fileManager,IObserver<DocumentChangeSet> observer,IFilter filter = null)
+            public Subscribtion(FileManager fileManager, IObserver<DocumentChangeSet> observer, IFilter<DocumentLine> filter = null)
             {
                 // TODO: Complete member initialization
                 this._fileManager = fileManager;

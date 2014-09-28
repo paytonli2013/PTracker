@@ -2,3 +2,7 @@ C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\bin\Debug\PTracker.Core.dll
 C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\bin\Debug\PTracker.Core.pdb
 C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\obj\Debug\PTracker.Core.dll
 C:\Workspace\Git\PTracker\src\PTracker\PTracker.Core\obj\Debug\PTracker.Core.pdb
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Core\obj\Debug\PTracker.Core.dll
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Core\obj\Debug\PTracker.Core.pdb
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Core\bin\Debug\PTracker.Core.dll
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Core\bin\Debug\PTracker.Core.pdb

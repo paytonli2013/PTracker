@@ -2,3 +2,7 @@ C:\Workspace\Git\PTracker\src\PTracker\PrototypeConsole\bin\Debug\PrototypeConso
 C:\Workspace\Git\PTracker\src\PTracker\PrototypeConsole\bin\Debug\PrototypeConsole.pdb
 C:\Workspace\Git\PTracker\src\PTracker\PrototypeConsole\obj\x86\Debug\PrototypeConsole.exe
 C:\Workspace\Git\PTracker\src\PTracker\PrototypeConsole\obj\x86\Debug\PrototypeConsole.pdb
+D:\WorkSpace\Git\PTracker\src\PTracker\PrototypeConsole\bin\Debug\PrototypeConsole.exe
+D:\WorkSpace\Git\PTracker\src\PTracker\PrototypeConsole\bin\Debug\PrototypeConsole.pdb
+D:\WorkSpace\Git\PTracker\src\PTracker\PrototypeConsole\obj\x86\Debug\PrototypeConsole.exe
+D:\WorkSpace\Git\PTracker\src\PTracker\PrototypeConsole\obj\x86\Debug\PrototypeConsole.pdb

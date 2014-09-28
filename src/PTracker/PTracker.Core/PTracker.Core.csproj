@@ -40,14 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CombinedFilter.cs" />
+    <Compile Include="Condition.cs" />
     <Compile Include="DocumentChangeSet.cs" />
     <Compile Include="DocumentLine.cs" />
     <Compile Include="FileManager.cs" />
+    <Compile Include="Guard.cs" />
     <Compile Include="IFileManager.cs" />
     <Compile Include="IFilter.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextContantFilter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
