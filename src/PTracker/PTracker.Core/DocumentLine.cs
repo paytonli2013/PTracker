@@ -7,7 +7,6 @@ namespace PTracker.Core
 {
     public class DocumentLine
     {
-
         public DocumentLine(int lineNumber)
         {
             _lineNumber = lineNumber;
@@ -27,5 +26,8 @@ namespace PTracker.Core
             get { return _text; }
             set { _text = value; }
         }
+
+        static DocumentLine _default = new DocumentLine(0);
+        public static DocumentLine Default { get {return _default;} }
     }
 }

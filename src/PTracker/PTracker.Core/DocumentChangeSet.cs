@@ -7,16 +7,34 @@ namespace PTracker.Core
 {
     public class DocumentChangeSet
     {
-        public DocumentChangeSet(IEnumerable<DocumentLine> newLines)
+        public DocumentChangeSet(IEnumerable<DocumentChange> changes)
         {
-            _newLines = newLines;
+            _changes = changes;
         }
 
-        IEnumerable<DocumentLine> _newLines;
+        IEnumerable<DocumentChange> _changes;
 
-        public IEnumerable<DocumentLine> NewLines
+        public IEnumerable<DocumentChange> NewLines
         {
-            get { return _newLines; }
+            get { return _changes; }
+        }
+
+        public override string ToString()
+        {
+            return ToString(_changes);
+        }
+
+        static string ToString(IEnumerable<DocumentChange> changes)
+        {
+            if (changes == null || !changes.Any())
+                return string.Empty;
+               
+            StringBuilder sb = new StringBuilder();
+            foreach (var change in changes)
+            {
+                sb.AppendLine(change.ToString());
+            }
+            return sb.ToString();
         }
     }
 }

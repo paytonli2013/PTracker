@@ -14,12 +14,12 @@ namespace PTracker.Core
         string _path;
         bool _isTracking;
         Encoding _encoding;
-        TaskFactory _callerTaskFactory;
         TaskFactory _defaultTaskFactory;
         ILogger _logger;
         int _lineNumber;
         volatile bool _isLoading;
         volatile bool _needUpdate;
+        volatile bool _isUpdating;
         BlockingCollection<DocumentLine> _lines = new BlockingCollection<DocumentLine>();
         DateTime _loadTime;
         long _position = 0;
@@ -32,7 +32,6 @@ namespace PTracker.Core
         public FileManager(string path, bool isTracking = true, Encoding encoding = null, TaskScheduler tScheduler = null, ILogger logger = null)
         {
             _logger = logger ?? new Logger();
-            _callerTaskFactory = new TaskFactory(tScheduler ?? TaskScheduler.FromCurrentSynchronizationContext());
             _defaultTaskFactory = new TaskFactory(tScheduler ?? TaskScheduler.Default);
 
             if (string.IsNullOrEmpty(path))
@@ -50,7 +49,7 @@ namespace PTracker.Core
             _encoding = encoding ?? Encoding.Unicode;
             _defaultTaskFactory.StartNew(Load);
             _logger.WriteLine(string.Format("FileManager constructed. path: {0}", _path));
-           
+
             _fsw = new FileSystemWatcher(_fi.DirectoryName);
             _fsw.Filter = _fi.Name;
             _fsw.Changed += new FileSystemEventHandler(FileChanged);
@@ -81,18 +80,53 @@ namespace PTracker.Core
         private void Update()
         {
             Thread.Sleep(10);
-            using (FileStream fs = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.Read))
-            using (StreamReader sr = new StreamReader(fs, _encoding))
+            _isUpdating = true;
+
+            try
             {
-                fs.Position = _position;
-                while (sr.Peek() > 0)
+                var linesAdded = new List<DocumentLine>();
+                using (FileStream fs = new FileStream(_path, FileMode.Open, FileAccess.Read, FileShare.Read))
+                using (StreamReader sr = new StreamReader(fs, _encoding))
                 {
-                    var line = new DocumentLine(_lineNumber);
-                    line.Text = sr.ReadLine();
-                    Interlocked.Increment(ref _lineNumber);
-                    _lines.Add(line);
+                    fs.Position = _position;
+                    while (sr.Peek() > 0)
+                    {
+                        var line = new DocumentLine(_lineNumber);
+                        line.Text = sr.ReadLine();
+                        Interlocked.Increment(ref _lineNumber);
+                        _lines.Add(line);
+                        linesAdded.Add(line);
+                    }
+                    _position = fs.Position;
                 }
-                _position = fs.Position;
+            }
+            catch (Exception ex)
+            {
+                _logger.WriteLine(ex.Message);
+            }
+            finally
+            {
+                _isUpdating = false;
+            }
+        }
+
+        private void NotifySubscriber(IEnumerable<DocumentLine> lines)
+        {
+            if (lines == null || !lines.Any())
+                return;
+            
+            List<DocumentChange> changes = new List<DocumentChange>();
+
+            foreach (var line in lines)
+            {
+                changes.Add(DocumentChange.NewLine(line));
+            }
+
+            var changeSet = new DocumentChangeSet(changes);
+
+            foreach (var subscribtion in _subscribtions)
+            {
+                subscribtion.Observer.OnNext(changeSet);
             }
         }
 
@@ -168,7 +202,7 @@ namespace PTracker.Core
             }
         }
 
-        List<Subscribtion> _subscribtions = new List<Subscribtion>();
+        List<Subscription> _subscribtions = new List<Subscription>();
 
         public IDisposable Subscribe(IObserver<DocumentChangeSet> observer)
         {
@@ -177,13 +211,15 @@ namespace PTracker.Core
 
         public IDisposable Subscribe(IObserver<DocumentChangeSet> observer, IFilter<DocumentLine> filter)
         {
-            var subscribtion = new Subscribtion(this, observer, filter);
+            var subscribtion = new Subscription(this, observer, filter);
             _subscribtions.Add(subscribtion);
             return subscribtion;
         }
 
-        internal class Subscribtion : IDisposable
+        internal class Subscription : IDisposable
         {
+            TaskFactory _callerTaskFactory;
+
             private FileManager _fileManager;
 
             IFilter<DocumentLine> _filter;
@@ -200,12 +236,24 @@ namespace PTracker.Core
                 get { return _observer; }
             }
 
-            public Subscribtion(FileManager fileManager, IObserver<DocumentChangeSet> observer, IFilter<DocumentLine> filter = null)
+            public Subscription(FileManager fileManager, IObserver<DocumentChangeSet> observer, IFilter<DocumentLine> filter = null,TaskScheduler tScheduler=null)
             {
                 // TODO: Complete member initialization
                 this._fileManager = fileManager;
                 this._observer = observer;
                 this._filter = filter;
+
+                _callerTaskFactory = new TaskFactory(tScheduler ?? TaskScheduler.FromCurrentSynchronizationContext());
+            }
+
+            public void OnNext(DocumentChangeSet changeSet)
+            {
+                Action<object> action = (status)=>
+                {
+                    Tuple<IObserver<DocumentChangeSet>, DocumentChangeSet> payload = (Tuple<IObserver<DocumentChangeSet>, DocumentChangeSet>)status;
+                    payload.Item1.OnNext(payload.Item2);
+                };
+                _callerTaskFactory.StartNew(action, Tuple.Create<IObserver<DocumentChangeSet>, DocumentChangeSet>(_observer,changeSet));
             }
 
             bool isDisposed;
@@ -216,6 +264,8 @@ namespace PTracker.Core
 
                 _fileManager._subscribtions.Remove(this);
                 _fileManager = null;
+                _observer = null;
+                _filter = null;
                 isDisposed = true;
             }
         }

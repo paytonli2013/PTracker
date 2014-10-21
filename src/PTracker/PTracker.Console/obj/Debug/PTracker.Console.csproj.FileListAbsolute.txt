@@ -1,0 +1,8 @@
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Console\bin\Debug\PTracker.Console.exe.config
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Console\bin\Debug\PTracker.Console.exe
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Console\bin\Debug\PTracker.Console.pdb
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Console\bin\Debug\PTracker.Core.dll
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Console\bin\Debug\PTracker.Core.pdb
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Console\obj\Debug\PTracker.Console.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Console\obj\Debug\PTracker.Console.exe
+D:\WorkSpace\Git\PTracker\src\PTracker\PTracker.Console\obj\Debug\PTracker.Console.pdb
