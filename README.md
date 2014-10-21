@@ -1,4 +1,4 @@
 PTracker
 ========
 
-a real-time log file tracker wpf application
+a real-time log file tracking application based on wpf
